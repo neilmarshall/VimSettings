@@ -24,6 +24,8 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'tpope/vim-obsession'
 Plug 'scrooloose/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 let g:lightline = {}
