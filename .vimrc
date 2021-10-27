@@ -26,6 +26,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
+Plug 'kongo2002/fsharp-vim'
 call plug#end()
 
 let g:lightline = {}
@@ -36,4 +37,4 @@ let g:lightline.tabline = {
 set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline
 
-colorscheme onehalfdark
+colorscheme nord
