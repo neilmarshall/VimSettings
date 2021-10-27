@@ -16,6 +16,16 @@ let g:netrw_browse_split=4
 let g:netrw_liststyle=3
 tnoremap <Esc> <C-\><C-n>
 
+let g:lightline = {}
+let g:lightline.tabline = {
+  \   'left': [ ['tabs'] ],
+  \   'right': [ ['close'] ]
+  \ }
+set showtabline=2  " Show tabline
+set guifont=Lucida_Console:h10
+set guioptions-=e  " Don't use GUI tabline
+
+colorscheme nord
 call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
@@ -28,13 +38,3 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'kongo2002/fsharp-vim'
 call plug#end()
-
-let g:lightline = {}
-let g:lightline.tabline = {
-  \   'left': [ ['tabs'] ],
-  \   'right': [ ['close'] ]
-  \ }
-set showtabline=2  " Show tabline
-set guioptions-=e  " Don't use GUI tabline
-
-colorscheme nord
