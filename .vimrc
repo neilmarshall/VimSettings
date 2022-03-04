@@ -41,3 +41,6 @@ Plug 'jacoborus/tender'
 call plug#end()
 
 colorscheme nord
+
+"command to aid display issues with NeoVim
+autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
